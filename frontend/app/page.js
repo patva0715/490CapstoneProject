@@ -5,6 +5,7 @@ import Od from "./odemoeter";
 import { FaArrowTrendDown, FaArrowTrendUp } from "react-icons/fa6";
 import NetChart from "./chart";
 import { GiBrain } from "react-icons/gi";
+import { FaRegCircleQuestion } from "react-icons/fa6"
 export default function Home() {
   const [netWorth, setNetworth] = useState(300000)
 
@@ -19,13 +20,13 @@ export default function Home() {
           </div>
 
           {/* DIVIDER NET WORTH */}
-          <div className=" fade w-full flex flex-wrap  bg-neutral-900 rounded-2xl overflow-hidden  ">
+          <div className="  w-full flex flex-wrap  bg-neutral-900 rounded-2xl overflow-hidden  ">
 
             <div className="flex w-full items-end">
-              <div className="basis-1/4 grow flex items-end gap-2 p-6">
+              <div className="  basis-1/4 grow flex items-end gap-2 p-6">
                 {/* <p className="text-4xl font-bold">${netWorth}</p> */}
-                <p className="text-5xl font-bold ">$33,256</p>
-                <p className="text-sm opacity-50 border-b-[1px] border-dashed pb-[1px] pt-1 ">Net worth</p>
+                <p className="fade text-5xl font-bold ">$33,256</p>
+                <p className="fade flex gap-1  text-neutral-400 border-neutral-400 border-b-[1px] border-dashed pb-[1px] pt-1 ">Net worth<FaRegCircleQuestion className="mt-1"/></p>
               </div>
               {/* <div className="basis-1/4 grow-0 flex flex-col items-center p-6">
               <p className="text-md font-medium">$50,456</p>
